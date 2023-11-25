@@ -10,6 +10,6 @@ async function sendEmail() {
 
 <template>
   <div>
-    <button @click="sendEmail">Send email</button>
+    <button @click="sendEmail">FOI</button>
   </div>
 </template>

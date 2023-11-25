@@ -4,7 +4,7 @@ import nodemailer from 'nodemailer';
 const config = useRuntimeConfig();
 
 
-export default defineEventHandler(async (event) => {
+export default defineEventHandler(async () => {
   const template = await useCompiler('welcome.vue', {
     props: {
       url: 'https://vuemail.net/',
@@ -26,7 +26,7 @@ export default defineEventHandler(async (event) => {
   const options = {
     from: 'you@example.com',
     to: 'user@gmail.com',
-    subject: 'hello world',
+    subject: 'hello world!!',
     html: template,
   };
 
